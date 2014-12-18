@@ -1,0 +1,20 @@
+<!-- home.html -->
+
+<div class="container">
+	<div class="row header">
+		<div class="col-xs-12 col-md-6">
+			<h1>My Seoul</h1>
+			<div id="weather"></div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 col-md-6 headlines">
+			<ul>
+				<li ng-repeat="item in leftMenu"><a href="{{ item.ref }}" ng-mouseenter="hoverItem(item.color)" 
+				ng-mouseleave="stopHoverItem()">{{ item.text }}</a></li>
+			</ul>
+
+			<iframe scrolling=no frameborder=0 width=102 height=41 marginwidth=0 marginheight=0 src="http://count-1.blueweb.co.kr/bluecgi/counter/counter21.php?dbname=han0370"></iframe>
+		</div>
+	</div>
+</div>

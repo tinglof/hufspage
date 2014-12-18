@@ -1,0 +1,265 @@
+@font-face {
+    font-family: 'weather';
+    src: url('../fonts/artill_clean_icons.otf') format("opentype");;
+    font-weight: normal;
+    font-style: normal;
+}
+/* make our pages be full width and full height */
+/* positioned absolutely so that the pages can overlap each other as they enter and leave */
+body {  
+	backface-visibility: hidden;
+	-webkit-font-smoothing: antialiased;
+}
+
+.fade {
+	position:absolute;
+	top:0;  
+	width:100%;
+}
+
+.fade h1 {
+	font-weight: 700!important;
+}
+
+
+.headlines:hover ul li a:hover {
+	transition: color 0.6s ease;
+	color: rgba(255, 255, 255, 1);
+}
+
+.headlines ul {
+	padding: 0;
+	list-style-type: none;
+}
+.headlines li {
+	margin-bottom: 35px;
+}
+
+.bottom-row {
+	padding-bottom: 50px;
+}
+
+h2 {
+	font-size: 36px;
+}
+
+p {
+	font-size: 18px;
+}
+
+.fade a {  
+	font-size: 46px;
+	font-family: 'Open Sans';
+	font-weight: 200;
+	color: rgba(255, 255, 255, 0.45);
+	text-decoration: none;
+	transition: color 0.4s ease;
+	-webkit-font-smoothing: antialiased;
+}
+
+.fade a     { margin-top:50px; }
+
+/* HOME Styles */
+
+.header {
+	margin-bottom: 100px;
+}
+
+.back-btn a:hover {
+	color: rgba(255, 255, 255, 1);
+}
+
+
+/* PAGES (specific colors for each page)
+============================================================================= */
+.page-home { 
+	background-image: url('../img/sunset_bw_g.jpg');
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    opacity: 0.88;
+
+}
+
+.page-home h1, h2 { 
+	text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+	font-weight: 400;
+}
+
+.page-home h1 { 
+	font-size: 50px;
+	color: #E5E5E5;
+	font-family: 'Open Sans';
+	text-transform: uppercase;
+}
+
+
+.page-food { 
+	background: rgba(237, 202, 95, 1);
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	color:#fff;
+	font-family: 'Open Sans';
+	opacity: 1;
+}
+
+.page-university { 
+	background: rgba(142, 124, 195, 1);
+	color:#fff;
+	height: 100%;
+	font-family: 'Open Sans';
+	opacity: 1;
+}
+
+.page-sight { 
+	background: rgba(224, 102, 102, 1);
+	color:#fff;
+	height: 100%;
+	font-family: 'Open Sans';
+	opacity: 1;
+}
+
+.page-place { 
+	background: rgba(147, 196, 125, 1);
+	color:#fff;
+	height: 100%;
+	font-family: 'Open Sans';
+	opacity: 1;
+}
+
+.page-food, .page-university, .page-sight, .page-dist h1, h2, p{
+	text-shadow: none;
+}
+
+.page-food h1 {
+	font-size: 60px;
+}
+
+/* AngularJS animation CSS */
+
+.fade.ng-enter,
+.fade.ng-leave {
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -o-transition: all 2s ease;
+    transition: all 2s ease;
+}
+
+.fade.ng-enter {
+    opacity: 0;
+}
+
+.fade.ng-enter-active {
+    opacity: 1;
+}
+
+.page-home.ng-enter-active {
+	opacity: 0.88;
+}
+
+.fade.ng-leave {
+    opacity: 1;
+}
+
+.fade.ng-leave-active {
+    opacity: 0;
+}
+
+/* WEATHER STLYE */
+
+#weather {
+  width: 500px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+i {
+  color: #E5D6A3;
+  font-family: weather;
+  font-size: 55px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.0;
+}
+
+
+
+
+.icon-0:before { content: ":"; }
+.icon-1:before { content: "p"; }
+.icon-2:before { content: "S"; }
+.icon-3:before { content: "Q"; }
+.icon-4:before { content: "S"; }
+.icon-5:before { content: "W"; }
+.icon-6:before { content: "W"; }
+.icon-7:before { content: "W"; }
+.icon-8:before { content: "W"; }
+.icon-9:before { content: "I"; }
+.icon-10:before { content: "W"; }
+.icon-11:before { content: "I"; }
+.icon-12:before { content: "I"; }
+.icon-13:before { content: "I"; }
+.icon-14:before { content: "I"; }
+.icon-15:before { content: "W"; }
+.icon-16:before { content: "I"; }
+.icon-17:before { content: "W"; }
+.icon-18:before { content: "U"; }
+.icon-19:before { content: "Z"; }
+.icon-20:before { content: "Z"; }
+.icon-21:before { content: "Z"; }
+.icon-22:before { content: "Z"; }
+.icon-23:before { content: "Z"; }
+.icon-24:before { content: "E"; }
+.icon-25:before { content: "E"; }
+.icon-26:before { content: "3"; }
+.icon-27:before { content: "a"; }
+.icon-28:before { content: "A"; }
+.icon-29:before { content: "a"; }
+.icon-30:before { content: "A"; }
+.icon-31:before { content: "6"; }
+.icon-32:before { content: "1"; }
+.icon-33:before { content: "6"; }
+.icon-34:before { content: "1"; }
+.icon-35:before { content: "W"; }
+.icon-36:before { content: "1"; }
+.icon-37:before { content: "S"; }
+.icon-38:before { content: "S"; }
+.icon-39:before { content: "S"; }
+.icon-40:before { content: "M"; }
+.icon-41:before { content: "W"; }
+.icon-42:before { content: "I"; }
+.icon-43:before { content: "W"; }
+.icon-44:before { content: "a"; }
+.icon-45:before { content: "S"; }
+.icon-46:before { content: "U"; }
+.icon-47:before { content: "S"; }
+
+#weather h2 {
+  margin: 0 0 5px;
+  color: #E5D6A3;
+  font-size: 35px;
+  font-weight: 300;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+#weather ul {
+  margin: 0;
+  padding: 0;
+}
+
+#weather li {
+  color: #E5D6A3;
+  font-size: 15px;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+#weather .currently {
+  margin: 0 20px;
+}

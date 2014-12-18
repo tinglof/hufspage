@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;">
+	<link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css">
+
+
+	<!-- Angular + ngRoute + ngAnimate -->
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular-route.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular-animate.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="bower_components/simpleWeather/jquery.simpleWeather.js"></script>
+	<script src="js/app.js"></script>
+
+	<!-- Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700,800' rel='stylesheet' type='text/css'>
+
+</head>
+
+<!-- apply our angular app -->
+<body ng-app="seoulApp">
+
+	<!-- inject our views using ng-view -->
+	<!-- each angular controller applies a different class here -->
+	<div class="fade {{ pageClass }}" ng-view></div>
+		
+	<script src="js/weather/weather.js"></script>
+</body>
+</html>
